@@ -1,9 +1,11 @@
 FROM owncloudci/nodejs:latest
 
-LABEL maintainer="ownCloud DevOps <devops@owncloud.com>" \
-  org.label-schema.name="ownCloud CI Chromium" \
-  org.label-schema.vendor="ownCloud GmbH" \
-  org.label-schema.schema-version="1.0"
+LABEL maintainer="ownCloud DevOps <devops@owncloud.com>"
+LABEL org.opencontainers.image.authors="ownCloud DevOps <devops@owncloud.com>"
+LABEL org.opencontainers.image.title="ownCloud CI Chromium"
+LABEL org.opencontainers.image.url="https://github.com/owncloud-ci/chromium"
+LABEL org.opencontainers.image.source="https://github.com/owncloud-ci/chromium"
+LABEL org.opencontainers.image.documentation="https://github.com/owncloud-ci/chromium"
 
 RUN apt-get update -y && \
     apt-get upgrade -y && \
